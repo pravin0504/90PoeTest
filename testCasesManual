@@ -1,0 +1,36 @@
+### Feature
+
+As a user I want to be able to add a list of strings.
+I want to see the number of vowels in each of the strings that I have entered.
+
+### Acceptance Criteria
+
+1. I should see the number of vowels and consonant for each string in the order they are keyed in.
+2. I should be able to add up to 4 strings at once.
+
+### QA Task
+
+1. Review the user story and prepare a list of questions/ assumptions.
+
+   - 1. what should be the expected behaviour when we passed other than string like - null values, undefined values, integers--- What should be the error message
+
+2. Review the code and provide feedback/ improvements.
+
+   - code is working only for lower case string, we should cover for both lower and upper cases
+
+3. Extend the program to return the number of consonants for each string array passed.
+
+   - added new lines of codes with comments
+
+4. Use BDD/ Cucumber to add test cases to test the program for both vowels and consonants.
+
+5. Report any bugs you find. Include as much information as necessary and add the feedback as a file to the repo along with the Cucumber Test Report.
+
+defect:
+Description: Not working for upper cases characters in string
+steps to reproduce:
+S1. Go to file Launch.json
+S2. In key "args", pass the value as a combination of small and upper case strings ( ex. PravEeN KUMar)
+S3. run the code
+expected behvaior :{PravEeN=3, KUMar - 1}
+Actual behvaiour :{KUMar=1, PravEeN=2}
